@@ -1,0 +1,352 @@
+VteTerminal,
+vte-terminal {
+  padding: 5px;
+}
+
+menu,
+.csd .menu,
+.csd .dropdown,
+.csd .context-menu {
+  border-radius: 1px;
+  background-color: #2f343f;
+  color: #ccc;
+}
+
+/*
+* https://github.com/Jazqa/adwaita-tweaks/blob/master/gtk-3.0/gtk-dark.css
+* */
+window.csd .titlebar:not(headerbar),
+window.csd .titlebar {
+  min-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: none;
+}
+
+window.csd .titlebar:not(headerbar):backdrop,
+window.csd .titlebar:backdrop {
+  min-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: none;
+}
+
+headerbar,
+headerbar.titlebar {
+  box-shadow: none;
+  border: none;
+}
+
+headerbar:backdrop,
+headerbar.titlebar:backdrop {
+  box-shadow: none;
+}
+
+/*xfce desktop*/
+/* xfdesktop icon theme */
+XfdesktopIconView.view {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+XfdesktopIconView.view:active {
+  color: #3584e4;
+  border-radius: 3px;
+}
+
+XfdesktopIconView.rubberband {
+  background-color: rgba(53, 132, 228, 0.2);
+}
+
+XfdesktopIconView.label:selected {
+  background-color: rgba(53, 132, 228, 0.5);
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+/* vista panels */
+panel-toplevel.background,
+panel-toplevel.background menubar {
+  background-color: #000000;
+  color: #ffffff;
+}
+panel-toplevel.background menubar,
+panel-toplevel.background #PanelApplet label,
+panel-toplevel.background #PanelApplet image {
+  color: #ffffff;
+}
+panel-toplevel.background menubar > menuitem,
+panel-toplevel.background menubar > menuitem label:backdrop {
+  color: #ffffff;
+}
+panel-toplevel.background menubar > menuitem:hover,
+panel-toplevel.background menubar > menuitem:hover label:backdrop {
+  color: #000000;
+}
+panel-toplevel.background button {
+  color: #ffffff;
+  text-shadow: 1px 1px black;
+  background-image: url("./assets/panel.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+panel-toplevel.background button:hover {
+  border: none;
+  background-color: #333333;
+}
+panel-toplevel.background button:active,
+panel-toplevel.background button:checked {
+  color: #ffffff;
+  border: none;
+  background-color: black;
+}
+
+.xfce4-panel.panel,
+.xfce4-panel.background,
+#systray-6 {
+  background-color: transparent;
+  background-image: url("./assets/panel.png");
+  background-size: 1px 100%;
+  background-repeat: repeat;
+}
+.xfce4-panel.panel button.flat,
+.xfce4-panel.panel button.sidebar-button,
+.xfce4-panel.background button.flat,
+.xfce4-panel.background button.sidebar-button {
+  color: #ffffff;
+  text-shadow: 1px 1px black;
+  background-image: url("./assets/panel.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+.xfce4-panel.panel button.flat:hover,
+.xfce4-panel.panel button.sidebar-button:hover,
+.xfce4-panel.background button.flat:hover,
+.xfce4-panel.background button.sidebar-button:hover {
+  border: none;
+  background-color: #333333;
+}
+.xfce4-panel.panel button.flat:active,
+.xfce4-panel.panel button.flat:checked,
+.xfce4-panel.panel button.sidebar-button:active,
+.xfce4-panel.panel button.sidebar-button:checked,
+.xfce4-panel.background button.flat:active,
+.xfce4-panel.background button.flat:checked,
+.xfce4-panel.background button.sidebar-button:active,
+.xfce4-panel.background button.sidebar-button:checked {
+  color: #ffffff;
+  border: none;
+  background-color: black;
+}
+.xfce4-panel.panel button#launcher-arrow,
+.xfce4-panel.background button#launcher-arrow {
+  background-image: none;
+}
+.xfce4-panel.panel menu,
+.xfce4-panel.background menu {
+  text-shadow: none;
+}
+
+.xfce4-panel.panel .tasklist button,
+.xfce4-panel.background .tasklist button {
+  color: #ffffff;
+  text-shadow: 1px 1px black;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0;
+  padding-top: 0;
+  background: -gtk-gradient(
+    radial,
+    left top,
+    0.55,
+    right bottom,
+    0.6,
+    from(rgba(255, 255, 255, 0.8)),
+    to(transparent)
+  );
+}
+.xfce4-panel.panel .tasklist button:hover,
+.xfce4-panel.background .tasklist button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: -gtk-gradient(
+    radial,
+    left top,
+    0.55,
+    right bottom,
+    0.6,
+    from(rgba(255, 255, 255, 0.9)),
+    to(transparent)
+  );
+}
+.xfce4-panel.panel .tasklist button:checked,
+.xfce4-panel.panel .tasklist button:active,
+.xfce4-panel.background .tasklist button:checked,
+.xfce4-panel.background .tasklist button:active {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: -gtk-gradient(
+      radial,
+      left top,
+      0.55,
+      right bottom,
+      0.6,
+      from(rgba(255, 255, 255, 0.9)),
+      to(transparent)
+    ),
+    -gtk-gradient(radial, center bottom, 0.25, center bottom, 0.85, from(rgba(255, 255, 255, 0.35)), to(transparent));
+}
+.xfce4-panel.panel .tasklist button:checked:hover,
+.xfce4-panel.panel .tasklist button:active:hover,
+.xfce4-panel.background .tasklist button:checked:hover,
+.xfce4-panel.background .tasklist button:active:hover {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: -gtk-gradient(
+      radial,
+      left top,
+      0.55,
+      right bottom,
+      0.6,
+      from(rgba(255, 255, 255, 0.99)),
+      to(transparent)
+    ),
+    -gtk-gradient(radial, center bottom, 0.25, center bottom, 0.85, from(rgba(255, 255, 255, 0.5)), to(transparent));
+}
+.xfce4-panel.panel #clock-button,
+.xfce4-panel.background #clock-button {
+  background-image: none;
+}
+.xfce4-panel.panel #clock-button:hover,
+.xfce4-panel.background #clock-button:hover {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+.xfce4-panel.panel #clock-button:checked,
+.xfce4-panel.background #clock-button:checked {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*csd*/
+#XfcePanelWindowWrapper button {background:none;}
+
+/*
+#XfcePanelWindow {
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+}*/
+
+menubar.-vala-panel-appmenu-private > menuitem > label{
+color:#ffffff;
+text-shadow: 1px 1px #000000
+}
+
+
+#XfcePanelWindow #applicationmenu-button {background:none}
+/*CSD HEADER Buttons for win xhidpi*/
+
+  headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize,
+  .titlebar button.titlebutton.close,
+  .titlebar button.titlebutton.maximize,
+  .titlebar button.titlebutton.minimize {
+    color: transparent;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:24px; /*depends*/
+    padding:0;
+    margin-top:0;
+    margin-bottom:0;
+    border-width: 0; }
+
+headerbar button.titlebutton.close {
+ min-width: 43px;/*depends*/
+ border-radius: 0; 
+ margin-left:-5px;
+}
+
+headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize {
+min-width: 24px; /*depends*/
+border-radius: 0; 
+}
+
+/*close*/
+headerbar button.titlebutton.close,
+.titlebar button.titlebutton.close {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-close.png"));
+}
+headerbar button.titlebutton.close:hover,
+.titlebar button.titlebutton.close:hover {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-close-hover.png"));
+}
+
+headerbar button.titlebutton.close:backdrop {
+  background-image: -gtk-scaled(url("assets/csd-winshine/button-close-inactive.png"));
+}
+
+headerbar button.titlebutton.close:active,headerbar button.titlebutton.close:checked,
+.titlebar button.titlebutton.close:active,.titlebar button.titlebutton.close:checked  {
+  background-image: -gtk-scaled(url("assets/csd-winshine/button-close-focus.png"));
+}
+
+/*maximize*/
+
+headerbar button.titlebutton.maximize,
+.titlebar button.titlebutton.maximize {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-max.png"));
+}
+
+headerbar button.titlebutton.maximize:hover,
+.titlebar button.titlebutton.maximize:hover {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-max-hover.png"));
+}
+
+headerbar button.titlebutton.maximize:backdrop {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-max-inactive.png"));
+}
+
+headerbar button.titlebutton.maximize:active,headerbar button.titlebutton.maximize:checked,
+.titlebar button.titlebutton.maximize:active,.titlebar button.titlebutton.maximize:checked  {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-max-focus.png"));
+}
+
+/*minimize*/
+headerbar button.titlebutton.minimize,
+.titlebar button.titlebutton.minimize {
+   margin-left:4px;
+   margin-right:-5px;
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-min.png"));
+}
+
+headerbar button.titlebutton.minimize:backdrop {
+  background-image: -gtk-scaled(url("assets/csd-winshine/button-min-inactive.png"));
+}
+
+headerbar button.titlebutton.minimize:hover {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-min-hover.png"));
+}
+
+headerbar button.titlebutton.minimize:active,headerbar button.titlebutton.minimize:checked {
+   background-image: -gtk-scaled(url("assets/csd-winshine/button-min-focus.png"));
+}
+
+/* compact header */
+headerbar entry,
+headerbar spinbutton,
+headerbar button,
+headerbar separator {
+    margin-top: 0px; /* same as headerbar side padding for nicer proportions */
+    margin-bottom: 0px;
+}
+
+headerbar {
+    min-height: 24px;
+    margin: 0px; /* same as headerbar side padding for nicer proportions */
+    padding: 0px;
+    padding-left: 2px; /* same as childrens vertical margins for nicer proportions */
+    padding-right: 2px;
+    background-color: #CECECE;
+}
+
