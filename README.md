@@ -63,13 +63,11 @@ A vista-ish transformation pack for the xfce desktop environment.
     - Select vistabird in xfce settings > Mouse and touchpad > Theme
     - Select vistabird in xfce settings > Appearance > Icons
 
-3. For the panel background 
-    
-    Panel preferences > Appearance > Background
-        
+3. For the panel background, right-click panel > Panel preferences > Appearance > Background
+    ```
     Style = Background Image
-    
     File = /usr/share/themes/vistabird/extra/panel-backgrounds/vista-panel2.png
+    ```
 
 4. For the start menu, the xfce4-whisker-menu is used. Right click whisker menu > Properties > Panel button and in the title box, put in 
     ```
